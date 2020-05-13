@@ -1,26 +1,13 @@
-// import React, { useState, useEffect } from 'react';
-
-// export default fetching (props) {
-
-// const [imageUrl, setImageUrl] = useEffect(null);
-
-// useEffect(async () => {
-//   const response = await fetch("https://memegen.link/")
-//   const data = response.json();
-//   const[item] = data.result;
-//   setImageUrl(item);
-//   console.log(item)
-
-// });
-// };
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 
 export default function imageFetch(props) {
+  let list = [];
   fetch('https://memegen.link/templates')
     .then((res) => res.json())
     .then((result) => {
-      console.log(result);
+      list = Object.values(result);
+      console.log(list[1]);
     });
   //this return weather infos to App.js
-  return;
+  return list;
 }

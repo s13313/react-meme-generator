@@ -7,6 +7,8 @@ function App() {
   useEffect(imageFetch, []);
   const [textAbove, settextAbove] = useState('');
   const [textBelow, settextBelow] = useState('');
+  const [lis, setlist] = useState('');
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,8 +26,10 @@ function App() {
         >
           Download your meme here
         </a>
+
         <br />
         <div>
+          {/* <p>{imageFetch()}</p> */}
           <img src="https://memegen.link/buzz/we_are/awesome.jpg"></img>
         </div>
       </header>
