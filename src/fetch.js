@@ -1,13 +1,14 @@
-import React, { useState, Component } from 'react';
+// import React from 'react';
 
-export default function imageFetch(props) {
-  let list = [];
-  fetch('https://memegen.link/templates')
-    .then((res) => res.json())
-    .then((result) => {
-      list = Object.values(result);
-      console.log(list[1]);
-    });
-  //this return weather infos to App.js
-  return list;
-}
+// let list = [];
+// export default function imageFetch(props) {
+//   fetch('https://memegen.link/templates')
+//     .then((res) => res.json())
+//     .then((result) => {
+//       // list = [Object.keys(result), Object.values(result)];
+//       console.log(result);
+//       list = result;
+//     });
+//   // return;
+//   //this return weather infos to App.js
+// }
