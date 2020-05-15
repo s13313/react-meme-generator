@@ -86,3 +86,7 @@ code {
 .diving {
   display: flex;
 }
+
+.loading {
+  background-image: url('https://media.giphy.com/media/xTkcEQACH24SMPxIQg/source.gif');
+}

@@ -21,7 +21,6 @@ export default function Form(props) {
     <div>
       <h1>Generate your meme here</h1>
       <hr />
-
       <br />
       <input
         className="input"
